@@ -58,11 +58,13 @@ export default function Input() {
     marginBottom: '0.3em',
     color: 'royalblue', /* STEP 2 */
   };
-  if (inputValue.length > 10) {
-    style.color = 'crimson'
-  } else {
-    style.color = 'royalblue'
-  }
+  // if (inputValue.length > 10) {
+  //   style.color = 'crimson'
+  // } else {
+  //   style.color = 'royalblue'
+  // }
+
+  {inputValue.length > 10 ? style.color = 'crimson' : style.color = 'royalblue'}
 
   return (
     <div className='widget-input container'>
